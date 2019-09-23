@@ -10,36 +10,56 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- bootstrap cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 </head>
 <body>
 
     <div class="main-section">
-        <div class="container">
-            
-            <table class="table table-bordered user-table mt-3">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">First Name</th>
-                        <th scope="col">Second Name</th>
-                        <th scope="col">E-mail</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>mark-otto@gmail.com</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
+        <div class="container">            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="addUserForm bg-dark text-light mt-4">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <form id="formAddUser">
+                  
+                                    <div class="form-group mt-2">
+                                        <label for="validationCustom01">First Name</label>
+                                        <input type="text" class="form-control first_name" name="first_name" placeholder="Enter first name">
+                                    </div>
+                            
+                                    <div class="form-group">
+                                        <label for="">Second Name</label>
+                                        <input type="text" class="form-control second_name" name="second_name" placeholder="Enter second name">
+                                    </div>
+                            
+                                    <div class="form-group">
+                                        <label for="">Email user</label>
+                                        <input type="email" class="form-control email" name="email" placeholder="Enter email">
+                                    </div>
+                            
+                                    <div class="form-group text-center">
+                                        <button type="submit" id="btn_add" class="btn btn-outline-primary pl-5 pr-5">Save</button>
+                                    </div>
+                                                
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 text-center">
+                    <div id="dataUser"></div>
+                </div>
+            </div>
+       </div>     
     </div>
 
-    <!-- main js -->
-    <script src="./js/main.js"></script>
     <!-- jquery cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
